@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CMF-L1</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>Censor my face.</header>
+    <input type="file" id="uploadImage" onchange="uploadImage();" /><br>
+    <img class="hide imgs" id="rawImage" src="" alt="Raw Image Uploaded"><br>
+    <div class="container">
+        <img class="hide imgs" id="censoredImage" src="" alt="Image after Censoring"><br>
+        <i id="overlay" class="em em-angry hide"></i>
+    </div>
+
+    <!-- importing js files -->
+    <script src="https://stackml.com/library-js/stackml.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
