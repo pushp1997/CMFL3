@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>CMF-L1</title>
+    <title>CMF-L3</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +10,9 @@
     <header>Censor my face.</header>
     <input type="file" id="uploadImage" onchange="uploadImage();" /><br>
     <img class="hide imgs" id="rawImage" src="" alt="Raw Image Uploaded"><br>
-    <div class="container">
+    <div class="container" id="ciContainer">
         <img class="hide imgs" id="censoredImage" src="" alt="Image after Censoring"><br>
-        <i id="overlay" class="em em-angry hide"></i>
+        <i id="overlay" class="overlay em hide"></i>
     </div>
 
     <!-- importing js files -->
