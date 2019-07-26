@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <header>Censor my face.</header>
-    <input type="file" id="uploadImage" onchange="uploadImage();" /><br>
-    <img class="hide imgs" id="rawImage" src="" alt="Raw Image Uploaded"><br>
+    <header><h1>Censor My Face</h1></header><br>
+    <h2>Upload an Image to Censor: </h2><br>
+    <input type="file" id="uploadImage" onchange="uploadImage();" /><br><br><br>
+    <img class="hide imgs image" id="rawImage" src="" alt="Raw Image Uploaded"><br><br>
     <div class="container" id="ciContainer">
-        <img class="hide imgs" id="censoredImage" src="" alt="Image after Censoring"><br>
+        <img class="hide image imgs" id="censoredImage" src="" alt="Image after Censoring">
         <i id="overlay" class="overlay em hide"></i>
     </div>
 

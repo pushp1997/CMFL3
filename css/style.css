@@ -1,14 +1,66 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+header{
+    background: rgba(36, 171, 137, 0.9);
+    color: white;
+    text-align: center;
+    font-family: monospace;
+    width: 100vw;
+    font-size: xx-large;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+}
+h2{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #333;
+}
 .hide{
     display: none !important;
 }
+#uploadImage {
+    color: transparent;
+  }
+#uploadImage::-webkit-file-upload-button {
+    visibility: hidden;
+}
+#uploadImage::before {
+    content: 'Select an Image';
+    color: black;
+    display: inline-block;
+    background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+}
+#uploadImage:hover::before {
+    border-color: black;
+}
+#uploadImage:active {
+    outline: 0;
+}
+#uploadImage:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+} 
 .container {
     position: relative;
     width: 100%;
     max-width: 400px;
 }
 .image {
-    width: 100%;
-    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #censoredImage{
     position: absolute;
@@ -18,5 +70,5 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background-position: unset !important;
+    _background-position: unset !important;
 }
